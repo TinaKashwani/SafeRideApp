@@ -1,0 +1,34 @@
+{
+    "riders": [
+      {
+        "studentID": "309809",
+        "name": "Ralph",
+        "pickup": "Head Hall",
+        "location": "646 Beaverbrook Street"
+      },
+      {
+        "studentID": "327189",
+        "name": "Akshay",
+        "pickup": "Head Hall",
+        "location": "980 College Hill Rd"
+      },
+      {
+        "studentID": "391899",
+        "name": "Darren",
+        "pickup": "SUB",
+        "location": "728 Beaverbrook Street"
+      },
+      {
+        "studentID": "362718",
+        "name": "Indy",
+        "pickup": "SUB",
+        "location": "593 Kitchen St"
+      },
+      {
+        "studentID": "345272",
+        "name": "Wallas",
+        "pickup": "STU",
+        "location": "687 Beaverbrook Street"
+      }
+    ]
+  }

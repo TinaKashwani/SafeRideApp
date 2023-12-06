@@ -1,0 +1,9 @@
+<resources>
+    <style name="SwitchTextAppearance">
+        <item name="android:textSize">8pt</item>
+    </style>
+    <style name="ButtonStyle">
+        <item name="android:background">@drawable/ic_rectangle_button_background</item>
+    </style>
+
+</resources>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="orange">#FFFD3C00</color>
+    <color name="thumbColor">#FFFF9800</color>
+    <color name="trackColor">#FFFFEB3B</color>
+    <color name="afterToggle">#FFF1AA43</color>
+    <color name="radioButton">#FF752B</color>
+</resources>

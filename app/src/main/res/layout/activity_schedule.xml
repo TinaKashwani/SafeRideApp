@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<HorizontalScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:scrollbars="horizontal">
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scrollbars="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageButton
+            android:id="@+id/return_button"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="?android:attr/selectableItemBackground"
+            android:contentDescription="@string/return_button"
+            android:src="@drawable/ic_left_chevron" />
+
+        <ImageView
+            android:id="@+id/logoImageView"
+            android:layout_width="410dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="40dp"
+            android:contentDescription="@string/logo_desc"
+            android:src="@drawable/work_schedule" />
+
+
+        <TableLayout
+            android:id="@+id/schedule_table"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="225dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="25dp"
+            android:stretchColumns="*">
+
+            <TableRow>
+
+                <TextView
+                    android:id="@+id/day_textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:textSize="20sp"
+                    android:textColor="#FF774D"
+                    android:textAlignment="center"
+                    android:text="@string/day_header" />
+
+                <TextView
+                    android:id="@+id/date_textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:textSize="20sp"
+                    android:textColor="#FF774D"
+                    android:textAlignment="center"
+                    android:text="@string/date_header" />
+
+                <TextView
+                    android:id="@+id/shift_textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:textSize="20sp"
+                    android:textColor="#FF774D"
+                    android:textAlignment="center"
+                    android:text="@string/timings_header" />
+
+                <TextView
+                    android:id="@+id/location_textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:textSize="20sp"
+                    android:textColor="#FF774D"
+                    android:textAlignment="center"
+                    android:text="@string/location_header" />
+
+            </TableRow>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#000000" />
+
+        </TableLayout>
+
+    </RelativeLayout>
+    </ScrollView>
+</HorizontalScrollView>
+

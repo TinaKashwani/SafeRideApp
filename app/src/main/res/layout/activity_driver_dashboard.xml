@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <ImageButton
+            android:id="@+id/weather_icon_button"
+            android:layout_width="58dp"
+            android:layout_height="48dp"
+            android:src="@drawable/weather_icon"
+            android:layout_margin="10dp"
+            android:background="?android:attr/selectableItemBackground"
+            android:contentDescription="@string/weather_icon_desc"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"/>
+
+        <ImageView
+            android:id="@+id/logoImageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/dashboard"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:contentDescription="@string/logo_desc" />
+        <TextView
+            android:id="@+id/driverName_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/driver_name_label"
+            android:layout_marginTop="180dp"
+            android:textColor="#FF5722"
+            android:textStyle="bold"
+            android:textSize="40sp"/>
+
+        <Button
+            android:id="@+id/log_out_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/log_out"
+            app:backgroundTint="@color/orange"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true" />
+
+        <LinearLayout
+            android:id="@+id/weather_layout"
+            android:layout_width="match_parent"
+            android:layout_height="110dp"
+            android:layout_below="@+id/driverName_textview"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:id="@+id/temp_textview"
+                android:textColor="@color/afterToggle"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:text="Temperature" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:id="@+id/rain_textview"
+                android:textColor="@color/afterToggle"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:text="rainfall" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:id="@+id/snow_textview"
+                android:textColor="@color/afterToggle"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:text="snowfall" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:id="@+id/wind_textview"
+                android:textColor="@color/afterToggle"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:text="windspeed" />
+        </LinearLayout>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="@string/view_schedule"
+            app:backgroundTint="@color/orange"
+            android:id="@+id/view_schedule_button"
+            android:layout_below="@id/driverName_textview"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:background="@drawable/ic_rectangle_button_background"/>
+
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/mySwitch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:height="48dp"
+            android:layout_below="@id/view_schedule_button"
+            android:textSize="30sp"
+            android:enabled="false"
+            android:textColor="#FF774D"
+            android:textStyle="bold"
+            android:text="@string/toggle_tag"
+            android:layout_marginTop="10dp"
+            app:trackTint="@color/trackColor"
+            app:thumbTint="@color/thumbColor"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:id="@+id/nonactive_textview"
+            android:layout_below="@id/mySwitch"
+            android:layout_centerHorizontal="true"
+            android:scrollbars="vertical"
+            android:layout_marginTop="40dp"
+            android:visibility="visible"
+            android:textColor="@color/afterToggle"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:text="@string/not_active_text" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:id="@+id/label_textview"
+            android:layout_below="@id/mySwitch"
+            android:layout_marginTop="25dp"
+            android:scrollbars="vertical"
+            android:visibility="gone"
+            android:textColor="@color/afterToggle"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:text="@string/label" />
+
+
+        <RadioGroup
+            android:id="@+id/myRadioGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/label_textview"
+            android:paddingLeft="12dp"
+            android:textColor="#F86233"
+            android:textStyle="bold"
+            android:visibility="gone">
+
+            <RadioButton
+                android:id="@+id/location1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/location1"
+                android:textSize="15sp"
+                android:textColor="@color/radioButton"
+                android:button="@null"
+                android:background="@null"
+                android:drawableStart="@drawable/ic_custom_radio_button_selector"
+                android:drawablePadding="12dp"/>
+
+            <RadioButton
+                android:id="@+id/location2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/location2"
+                android:textSize="15sp"
+                android:textColor="@color/radioButton"
+                android:button="@null"
+                android:background="@null"
+                android:drawableStart="@drawable/ic_custom_radio_button_selector"
+                android:drawablePadding="12dp"/>
+
+            <RadioButton
+                android:id="@+id/location3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/location3"
+                android:textSize="15sp"
+                android:textColor="@color/radioButton"
+                android:button="@null"
+                android:background="@null"
+                android:drawableStart="@drawable/ic_custom_radio_button_selector"
+                android:drawablePadding="12dp"/>
+
+        </RadioGroup>
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/myRadioGroup"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
+
+
+    </RelativeLayout>
+</androidx.core.widget.NestedScrollView>

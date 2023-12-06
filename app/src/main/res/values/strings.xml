@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">SafeRideApp</string>
+    <string name="populate_values">Populate Wait-list</string>
+    <string name="driver_sign_in_btn">Sign In As Driver</string>
+    <string name="log_out">Log out</string>
+    <string name="return_text">return</string>
+    <string name="maps_button">Open in Google Maps</string>
+    <string name="current_weather">Current Weather</string>
+    <string name="weather_text">%s degrees Celsius in %s</string>
+    <string name="view_schedule">View Schedule</string>
+    <string name="schedule_text">%s \t %s \t %s-%s</string>
+    <string name="label_text">Day \t Date \t Shift Timings</string>
+    <string name="return_button">Return</string>
+    <string name="toggle_tag">Are you actively working?</string>
+    <string name="not_active_text">text when not actively Working || Label</string>
+    <string name="label">Label</string>
+    <string name="location1">Head Hall</string>
+    <string name="location2">SUB</string>
+    <string name="location3">STU</string>
+    <string name="password_tag">password</string>
+    <string name="sign_in_text">Sign In</string>
+    <string name="username_tag">user@email.com</string>
+    <string name="day_header">Day</string>
+    <string name="date_header">Date</string>
+    <string name="timings_header">Timings</string>
+    <string name="location_header">Location</string>
+    <string name="rider_name_label">Rider Name</string>
+    <string name="remove_rider_btn">Remove rider</string>
+    <string name="driver_name_label">Driver Name</string>
+    <string name="logo_desc">UNB SafeRide logo</string>
+    <string name="detail_tag">Student Id: %s\n\nRider Name: %s\n\nDrop-Off-Location: %s</string>
+    <string name="weather_icon_desc">click to display the current weather conditions</string>
+    <string-array name="pickup_locations">
+        <item>Select</item>
+        <item>Head Hall</item>
+        <item>SUB</item>
+        <item>STU</item>
+    </string-array>
+</resources>

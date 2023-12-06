@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:id="@+id/Parent">
+
+    <ImageView
+        android:id="@+id/logoImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/unb_safe_ride_logo"
+        android:layout_centerHorizontal="true"
+        android:contentDescription="@string/logo_desc" />
+
+    <TextView
+        android:id="@+id/username_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:height="48dp"
+        android:layout_marginLeft="16dp"
+        android:layout_below="@+id/logoImageView"
+        android:textSize="30sp"
+        android:textColor="#FF774D"
+        android:textStyle="bold"
+        android:text="Username"
+        android:layout_marginTop="150dp"/>
+
+    <EditText
+        android:id="@+id/etUsername"
+        android:layout_width="380dp"
+        android:layout_height="48dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_below = "@+id/username_textView"
+        android:hint="@string/username_tag"
+        android:paddingLeft="8dp"
+        android:inputType="text"
+        android:autofillHints="Username"
+        android:background="@drawable/ic_rectangle_edittext_shape"/>
+    <TextView
+        android:id="@+id/password_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:height="48dp"
+        android:layout_marginLeft="16dp"
+        android:layout_below="@+id/etUsername"
+        android:textSize="30sp"
+        android:textColor="#FF774D"
+        android:textStyle="bold"
+        android:text="Password"
+        android:layout_marginTop="4dp"/>
+
+    <EditText
+        android:id="@+id/etPassword"
+        android:layout_width="380dp"
+        android:layout_height="48dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below = "@+id/password_textView"
+        android:hint="@string/password_tag"
+        android:paddingLeft="8dp"
+        android:inputType="textPassword"
+        android:autofillHints="Password"
+        android:background="@drawable/ic_rectangle_edittext_shape"/>
+
+    <Button app:backgroundTint="@color/orange"
+        android:id="@+id/btnSignIn"
+        android:layout_width="230dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below = "@+id/etPassword"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/ic_rectangle_button_background"
+        android:text="@string/sign_in_text" />
+</RelativeLayout>

@@ -1,0 +1,52 @@
+{
+  "schedule": [
+    {
+      "studentID": "309809",
+      "name": "Ralph",
+      "location": "Head Hall",
+      "date": "2023-12-05",
+      "startTime": "00:00:00",
+      "endTime": "22:00:00"
+    },
+    {
+      "studentID": "309809",
+      "name": "Ralph",
+      "location": "Head Hall",
+      "date": "2023-12-06",
+      "startTime": "01:00:00",
+      "endTime": "23:00:00"
+    },
+    {
+      "studentID": "327189",
+      "name": "Akshay",
+      "location": "STU",
+      "date": "2023-12-05",
+      "startTime": "18:00:00",
+      "endTime": "22:00:00"
+    },
+    {
+      "studentID": "391899",
+      "name": "Darren",
+      "location": "SUB",
+      "date": "2023-12-04",
+      "startTime": "13:00:00",
+      "endTime": "22:00:00"
+    },
+    {
+      "studentID": "362718",
+      "name": "Indy",
+      "location": "SUB",
+      "date": "2023-12-04",
+      "startTime": "13:00:00",
+      "endTime": "22:00:00"
+    },
+    {
+      "studentID": "345272",
+      "name": "Wallas",
+      "location": "STU",
+      "date": "2023-12-04",
+      "startTime": "13:00:00",
+      "endTime": "22:00:00"
+    }
+  ]
+}
