@@ -18,7 +18,7 @@ Safe Ride App is a mobile application designed for drivers providing transit ser
 
 ## Setup
 
-1. Clone the repository: `git clone <REPO_URL>`
+1. Clone the repository: `git clone https://github.com/TinaKashwani/SafeRideApp.git`
 2. Open the app on Android Studio and rebuild the gradle file.
 3. (OPTIONAL STEP) Configure API keys: 
    - Open-Meteo API: No API_KEY required, Open-Meteo weather link already <weather_url1> in the code.
